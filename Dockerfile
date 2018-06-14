@@ -5,7 +5,7 @@ RUN add-apt-repository ppa:jonathonf/python-3.6
 
 RUN apt-get update && \
     apt-get upgrade -y && \
-    apt-get install python3.6 && \
+    apt-get install -y python3.6 && \
     apt-get install -y tzdata locales python3-pip curl unzip groff && \
     pip3 install --no-cache-dir --upgrade pip
 

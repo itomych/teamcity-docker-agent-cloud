@@ -4,6 +4,7 @@ LABEL maintainer "Mikhail Merkulov <mikhail.m@itomy.ch>"
 
 RUN apt-get update && \
     apt-get upgrade -y && \
+    apt-get install python3.6 && \
     apt-get install -y tzdata locales python3-pip curl unzip groff && \
     pip3 install --no-cache-dir --upgrade pip
 

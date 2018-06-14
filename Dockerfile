@@ -1,6 +1,7 @@
 FROM mikhailmerkulov/teamcity-docker-agent-compose
 
 LABEL maintainer "Mikhail Merkulov <mikhail.m@itomy.ch>"
+RUN add-apt-repository ppa:jonathonf/python-3.6
 
 RUN apt-get update && \
     apt-get upgrade -y && \
